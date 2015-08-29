@@ -5,9 +5,6 @@
   "description": "A short description of your package",
   "keywords": [
   ],
-  "activationCommands": {
-    "atom-workspace": "subversion:toggle"
-  },
   "repository": "https://github.com/atom/subversion",
   "license": "MIT",
   "engines": {
