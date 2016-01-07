@@ -1,16 +1,17 @@
 {
-  "name": "subversion",
-  "main": "./lib/subversion",
+  "name": "atom-svn",
+  "main": "./lib/atom-svn",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "An Atom package for SVN support",
   "keywords": [
   ],
-  "repository": "https://github.com/atom/subversion",
+  "repository": "https://github.com/atom/atom-svn",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "atom-space-pen-views": "^2.0.3"
   },
   "consumedServices": {
     "status-bar": {

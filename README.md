@@ -1,4 +1,4 @@
-# subversion package
+# atom-svn package
 
 A short description of your package.
 
