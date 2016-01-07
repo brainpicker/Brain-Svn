@@ -1,0 +1,53 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Atom-Svn'
+      'command': 'atom-svn:toggle'
+      'submenu': [
+        {
+          'label': 'Commit'
+          'command': 'atom-svn:commit'
+        },
+        {
+          'label': 'Revert'
+          'command': 'atom-svn:merge'
+        },
+        {
+          'label': 'Info'
+          'command': 'atom-svn:info'
+        }
+      ]
+    }
+  ]
+  '.tree-view.full-menu .project-root > .header > span':
+    [
+      {'type': 'separator'}
+      {'label': 'Commit', 'command':  'atom-svn:commit'}
+      {'label': 'Update', 'command':  'atom-svn:update'}
+      {'label': 'Switch', 'command':  'atom-svn:switch'}
+      {'label': 'Revert', 'command':  'atom-svn:revert'}
+      {'type': 'separator'}
+      {'label': 'Info', 'command':  'atom-svn:info'}
+      {'label': 'WhichSvn', 'command':  'atom-svn:which'}
+      {'label': 'SvnVersion', 'command':  'atom-svn:svn-version'}
+      {'type': 'separator'}
+    ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Atom-Svn'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'atom-svn:toggle'
+        },
+        {
+          'label': 'Info'
+          'command': 'atom-svn:info'
+        }
+      ]
+    ]
+  }
+]
